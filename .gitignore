@@ -1,0 +1,7 @@
+.env
+__pycache__/
+data/chroma/
+data/refunds.json
+data/escalations.json
+.venv/
+.idea/

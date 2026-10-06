@@ -1,0 +1,20 @@
+[
+  {"order_id": "1001", "email": "alice@example.com", "status": "delivered", "delivered_days_ago": 3,
+   "items": [{"name": "Running Shoes", "price": 80.0, "final_sale": false}], "total": 80.0,
+   "tracking": [{"date": "5 days ago", "event": "Shipped"}, {"date": "3 days ago", "event": "Delivered"}]},
+  {"order_id": "1002", "email": "bob@example.com", "status": "shipped", "delivered_days_ago": null,
+   "items": [{"name": "Yoga Mat", "price": 25.0, "final_sale": false}], "total": 25.0,
+   "tracking": [{"date": "3 days ago", "event": "Shipped"}, {"date": "1 day ago", "event": "Arrived at local sorting facility"}]},
+  {"order_id": "1003", "email": "carol@example.com", "status": "delivered", "delivered_days_ago": 20,
+   "items": [{"name": "Wireless Earbuds", "price": 50.0, "final_sale": false}], "total": 50.0,
+   "tracking": [{"date": "23 days ago", "event": "Shipped"}, {"date": "20 days ago", "event": "Delivered"}]},
+  {"order_id": "1004", "email": "dave@example.com", "status": "delivered", "delivered_days_ago": 45,
+   "items": [{"name": "Backpack", "price": 60.0, "final_sale": false}], "total": 60.0,
+   "tracking": [{"date": "48 days ago", "event": "Shipped"}, {"date": "45 days ago", "event": "Delivered"}]},
+  {"order_id": "1005", "email": "erin@example.com", "status": "processing", "delivered_days_ago": null,
+   "items": [{"name": "Desk Lamp", "price": 35.0, "final_sale": false}], "total": 35.0,
+   "tracking": [{"date": "today", "event": "Order received, preparing for shipment"}]},
+  {"order_id": "1006", "email": "frank@example.com", "status": "delivered", "delivered_days_ago": 10,
+   "items": [{"name": "Clearance Jacket", "price": 40.0, "final_sale": true}], "total": 40.0,
+   "tracking": [{"date": "13 days ago", "event": "Shipped"}, {"date": "10 days ago", "event": "Delivered"}]}
+]

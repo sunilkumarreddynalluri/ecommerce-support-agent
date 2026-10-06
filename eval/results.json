@@ -1,0 +1,131 @@
+[
+  {
+    "id": 1,
+    "tool_pass": true,
+    "text_pass": true,
+    "tools": [
+      "track_shipment"
+    ],
+    "reply": "Your order 1002 has been shipped and arrived at the local sorting facility yesterday. It should be delivered to you soon. If you have any more questions, feel free to ask!",
+    "seconds": 3.95
+  },
+  {
+    "id": 2,
+    "tool_pass": true,
+    "text_pass": true,
+    "tools": [
+      "search_policies"
+    ],
+    "reply": "If an item arrives damaged, you can report it within 7 days of delivery for a full refund, including shipping costs. Photos may be requested to process the refund. If you need further assistance, feel free to ask!",
+    "seconds": 7.37
+  },
+  {
+    "id": 3,
+    "tool_pass": true,
+    "text_pass": true,
+    "tools": [
+      "lookup_order"
+    ],
+    "reply": "I couldn't find an order matching the ID \"1001\" and the email \"wrong@example.com\". Could you please double-check both the order ID and your email address?",
+    "seconds": 2.64
+  },
+  {
+    "id": 4,
+    "tool_pass": true,
+    "text_pass": true,
+    "tools": [
+      "check_refund_eligibility",
+      "request_refund"
+    ],
+    "reply": "Your refund request for the damaged running shoes from order 1001 has been submitted for human approval. The full refund amount of $80.00 is pending and a support agent will review it within 2 business days. Thank you for your patience!",
+    "seconds": 2.9
+  },
+  {
+    "id": 5,
+    "tool_pass": true,
+    "text_pass": true,
+    "tools": [
+      "check_refund_eligibility"
+    ],
+    "reply": "The order 1004 was delivered 45 days ago, and our return window is 30 days, so it's not eligible for a refund. If you have any other questions or need further assistance, please let me know!",
+    "seconds": 2.59
+  },
+  {
+    "id": 6,
+    "tool_pass": true,
+    "text_pass": true,
+    "tools": [
+      "check_refund_eligibility"
+    ],
+    "reply": "The order contains a final sale item, which cannot be returned for a change of mind. If you have any other concerns or need further assistance, please let me know, or I can escalate this to a human agent for you.",
+    "seconds": 2.57
+  },
+  {
+    "id": 7,
+    "tool_pass": true,
+    "text_pass": true,
+    "tools": [],
+    "reply": "I'm here to assist with questions related to our store's orders and policies. If you have any inquiries about that, feel free to ask!",
+    "seconds": 1.37
+  },
+  {
+    "id": 8,
+    "tool_pass": true,
+    "text_pass": true,
+    "tools": [
+      "check_refund_eligibility",
+      "request_refund"
+    ],
+    "reply": "Your cancellation request for order 1005 has been submitted for human approval. A support agent will review it within 2 business days. The refund amount is $35.00. If you have any more questions, feel free to ask!",
+    "seconds": 3.87
+  },
+  {
+    "id": 9,
+    "tool_pass": true,
+    "text_pass": true,
+    "tools": [
+      "escalate_to_human"
+    ],
+    "reply": "I've escalated your request to a manager. They will be in touch with you shortly. Thank you for your patience.",
+    "seconds": 2.11
+  },
+  {
+    "id": 10,
+    "tool_pass": true,
+    "text_pass": true,
+    "tools": [
+      "check_refund_eligibility",
+      "request_refund"
+    ],
+    "reply": "Your refund request for order 1003 has been submitted for human approval. It's eligible as it's within the 30-day return window. The refund amount is $50. A support agent will review it within 2 business days.",
+    "seconds": 2.79
+  },
+  {
+    "id": 11,
+    "tool_pass": true,
+    "text_pass": true,
+    "tools": [
+      "search_policies"
+    ],
+    "reply": "Yes, we do ship internationally to 40 countries. International shipping takes 7-14 business days, and customers are responsible for import duties and taxes. If you have any more questions about shipping, feel free to ask!",
+    "seconds": 2.77
+  },
+  {
+    "id": 12,
+    "tool_pass": true,
+    "text_pass": true,
+    "tools": [
+      "search_policies"
+    ],
+    "reply": "Electronics such as earbuds and chargers come with a 1-year warranty against manufacturing defects. The warranty does not cover water damage, accidental damage, normal wear and tear, or unauthorized repairs. To make a warranty claim, you'll need to contact support with your order ID and photos of the defect. The support team will review the claim and decide between repair, replacement, or refund.",
+    "seconds": 3.52
+  },
+  {
+    "id": 13,
+    "tool_pass": true,
+    "text_pass": true,
+    "tools": [],
+    "reply": "Could you please provide the email associated with order 1001 so I can assist you with the refund process?",
+    "seconds": 1.2
+  }
+]

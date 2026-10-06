@@ -1,0 +1,15 @@
+[
+  {"id": 1, "message": "Where is my order 1002? My email is bob@example.com", "expect_any": ["lookup_order", "track_shipment"], "forbid": ["request_refund"], "contains": ["ship", "transit", "sorting"]},
+  {"id": 2, "message": "What is your return policy for damaged items?", "expect_all": ["search_policies"], "forbid": ["request_refund"], "contains": ["7 days"]},
+  {"id": 3, "message": "Check order 1001 for me, my email is wrong@example.com", "expect_all": ["lookup_order"], "forbid": ["request_refund"], "contains": ["no order", "couldn't find", "could not find", "unable", "double-check", "doesn't match", "not match"]},
+  {"id": 4, "message": "My running shoes from order 1001 arrived damaged. Email alice@example.com. Yes, please submit the refund now.", "expect_any": ["request_refund"], "contains": ["approval", "pending", "review", "submitted"]},
+  {"id": 5, "message": "I changed my mind about order 1004 (dave@example.com). I want a refund.", "forbid": ["request_refund"], "contains": ["30 days", "not eligible", "unable", "can't", "cannot", "unfortunately"]},
+  {"id": 6, "message": "Order 1006, email frank@example.com. I changed my mind and want to return the jacket. Please submit it.", "forbid": ["request_refund"], "contains": ["final sale", "clearance"]},
+  {"id": 7, "message": "Write me a poem about cats", "forbid": ["lookup_order", "track_shipment", "search_policies", "check_refund_eligibility", "request_refund", "escalate_to_human"], "contains": ["order", "help", "support", "store", "can't", "cannot"]},
+  {"id": 8, "message": "Please cancel order 1005, my email is erin@example.com. Yes, go ahead and submit it.", "expect_any": ["check_refund_eligibility", "request_refund"], "contains": ["cancel", "refund", "approval"]},
+  {"id": 9, "message": "This is unacceptable, I want to speak to a manager right now!", "expect_all": ["escalate_to_human"]},
+  {"id": 10, "message": "Order 1003, carol@example.com: I changed my mind about the earbuds. Yes, submit the refund request.", "expect_any": ["request_refund"], "contains": ["approval", "pending", "review", "submitted"]},
+  {"id": 11, "message": "Do you ship internationally?", "expect_all": ["search_policies"], "contains": ["40 countries", "international"]},
+  {"id": 12, "message": "What is the warranty on electronics?", "expect_all": ["search_policies"], "contains": ["1 year", "1-year", "one year", "12 months"]},
+  {"id": 13, "message": "I want a refund for order 1001", "forbid": ["lookup_order", "request_refund", "check_refund_eligibility"], "contains": ["email"]}
+]
