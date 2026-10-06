@@ -45,6 +45,23 @@ Results (fill in from your own run):
 
 ## Failures found and fixes
 (Write what broke during your testing and how you fixed it. This is your best interview material.)
+Results on a 13-case benchmark (`eval/test_cases.json`):
+| Metric | Before prompt fixes | After |
+|---|---|---|
+| Tool-selection accuracy | 85% | 100% |
+| Fully correct responses | 77% | 100% |
+| Avg latency per case | 3.5s | 3.0s |
+
+Note: the benchmark is small and I tuned the prompt on these same cases, so the
+100% is not a general accuracy claim. Next step is a larger held-out test set.
+
+## Failures found and fixes
+1. The agent re-asked for the order ID and email the customer had already given.
+   Fixed with a prompt rule to reuse details from the conversation.
+2. For vague requests ("check order 1001") it asked what the customer wanted
+   instead of calling the lookup tool. Fixed with an explicit tool-first rule.
+3. It refused cancellations because the refund tool had no "cancel" reason.
+   Fixed by mapping cancellations to the `changed_mind` reason.
 
 ## Interview notes
 - Why rules in code? Why human approval? What would break at scale (persistent memory, real DB, auth)?
